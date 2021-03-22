@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <title>Website</title>
+<style>
+
+body{
+    margin: 0;
+    padding: 50px 0px;
+    background: radial-gradient(#1e8fa5, #08506b,black)no-repeat fixed;
+}
+button.clear{
+    background: #ff5722;
+    color:#fff;
+}
+table{
+    margin-left: auto;
+  margin-right: auto;
+    background: black;
+    padding: 7px 5px;
+    border: 6px solid black;
+    text-align: center;
+    padding-bottom: 0px;
+    box-shadow: 0px 0px 27px #0d5569;
+    border-radius: 10px;
+    margin-top: 90px;
+
+}
+button.equal{
+    width: 88%;
+    background: #210b04;
+}
+button.equal:hover{
+    background: #000803;
+}
+input[type="text"]{
+    width: 450px;
+    height: 10px;
+    border: 1px solid #000;
+    padding: 10px 20px;
+    font-size: 29px;
+    background: black;
+    font-weight: bold;
+    margin-bottom: 25px ;
+    font-family: cursive;
+    margin-top: #dedede;
+    border-bottom: 2px solid #cc4014;
+color: #dedede;
+}
+button{
+    padding: 10px 20px;
+    width: 100px;
+    height: 60px;
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: bold;
+    font-family: cursive;
+    background: #000803;
+    border:none;
+    color:#d23200;
+    border-radius: 6px;
+    cursor: pointer;
+
+}
+button:hover{
+    background: #210b4;
+}
+
+</style>
+
+</head>
+    <body>
+   
+<script src="practice.js"></script>
+
+<form name="calculator">
+    <table>
+        <tr>
+            <td colspan="4"><input type="text" name="result" placeholder="0" style="text-align: right;"> </td>
+        </tr>
+        <tr>
+            <td><button type="button" value="sin" onclick="sin()">sin</button></td>
+            <td><button type="button" value="cos" onclick="cos()">Cos</button></td>
+            <td><button type="button" value="tan" onclick="tan()">Tan</button></td>
+            <td colspan="2"><button type="button" value="" onclick="remove()" class="clear">C</button></td>
+        </tr>
+        <tr>
+            <td> <button type="button" value="x^2" onclick="square()">x<sup>2</button> </td>
+                <td> <button type="button" value="x^3" onclick="qubbed()">x<sup>3</button> </td>
+                    <td> <button type="button" value="sqrt2" onclick="sqrt2()"> &radic;</button> </td>
+                    <td> <button type="button" value="sqrt3" onclick="sqrt3()"> &#8731;</button> </td>
+        </tr>
+         <tr>
+             <td> <button type="button" value="1" onclick="number(value)">1</button></td>
+             <td> <button type="button" value="2" onclick="number(value)">2</button></td>
+             <td> <button type="button" value="3" onclick="number(value)">3</button></td>
+             <td> <button type="button" value="BACKSPC" onclick="bACKSPC()">></button></td>
+         </tr>
+         <tr>
+            <td> <button type="button" value="4" onclick="number(value)">4</button></td>
+            <td> <button type="button" value="5" onclick="number(value)">5</button></td>
+            <td> <button type="button" value="6" onclick="number(value)">6</button></td>
+            <td> <button type="button" value="-" onclick="number(value)">-</button></td>
+        </tr>
+        <tr>
+            <td> <button type="button" value="7" onclick="number(value)">7</button></td>
+            <td> <button type="button" value="8" onclick="number(value)">8</button></td>
+            <td> <button type="button" value="9" onclick="number(value)">9</button></td>
+            <td> <button type="button" value="/" onclick="number(value)"> / </button></td>
+        </tr>
+        <tr>
+            <td> <button type="button" value="." onclick="number(value)">.</button></td>
+            <td> <button type="button" value="0" onclick="number(value)">0</button></td>
+            <td> <button type="button" value="*" onclick="number(value)">*</button></td>
+            <td> <button type="button" value="%" onclick="number(value)">%</button></td>
+
+        </tr>
+        <tr>
+            <td colspan="2"> <button type="button" value="=" onclick="equal()">=</button></td>
+            <td> <button type="button" value="+" onclick="number(value)">+</button></td>
+        </tr>
+
+    </table>
+</form>
+
+<h4 style="color: cornsilk; text-align: center;">Created By: Katodono
+Date: 2077/12/08
+</h4>
+    </body>
+</html>
